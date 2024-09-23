@@ -13,6 +13,8 @@ void loop() {
     int i = 0;
     int vBand = 0;
     int vRes = 0;
+    // For more stable output, average
+    // the data from the ACC port
     for(i=0; i < NUM_SAMPLES; i++) {
         vBand += analogRead(BAND_IN);
         delay(200);
@@ -23,6 +25,9 @@ void loop() {
 
     if(vRes == 0)
       Serial.println(" Transceiver OFF");
+    // You will probably need to adjust these values
+    // to suit your transceiver, as they were determined
+    // experimentally.
     else if(vRes > 0 && vRes < 100)
       Serial.println(" 30m");
     else if(vRes >= 100 && vRes < 200)
