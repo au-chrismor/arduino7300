@@ -22,6 +22,7 @@ void setup() {
     pinMode(RLY_40M, OUTPUT);
     pinMode(RLY_80M, OUTPUT);
     pinMode(TX_PIN, INPUT);
+    pinMode(AMP_TX, OUTPUT);
 }
 
 void loop() {
