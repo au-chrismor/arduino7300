@@ -9,10 +9,12 @@
 
 #define RLY_10M        D2
 #define RLY_15M        D3
-#define RLY_30M        D4
-#define RLY_40M        D5
-#define RLY_80M        D6
-#define TX_PIN         D7
+#define RLY_30M        D6
+#define RLY_40M        D6
+#define RLY_80M        D8
+#define TX_PIN         D9
+#define SDA_PIN        D4
+#define SCL_PIN        D5
 
 #define BAND_IN        A0
 #define THERM_PIN      A1
