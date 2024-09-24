@@ -13,8 +13,8 @@
 #define RLY_40M        D7
 #define RLY_80M        D8
 #define FAN_PIN        D9
-#define TX_PIN         D10
-#define TBD_11         D11
+#define TX_PIN         D10  // Input from transceiver
+#define AMP_TX         D11  // Output to amplifier
 #define TBD_12         D12
 
 #define SDA_PIN        D4
