@@ -1,4 +1,4 @@
-# Linear Amplifier Controls for Icom IC-7400
+# Linear Amplifier Controls for Icom IC-7300
 
 Christopher Moran (VK2MEI)
 
