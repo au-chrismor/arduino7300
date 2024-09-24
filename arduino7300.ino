@@ -1,14 +1,8 @@
 // Controller for LPF and LDMOS amplifier
 // Christopher F. Moran, VK2MEI
 //
-#define BAND_IN A0
-#define NUM_SAMPLES 3
 
-#define RLY_10M D2
-#define RLY_15M D3
-#define RLY_30M D3
-#define RLY_40M D4
-#define RLY_80M D5
+#include "arduino7300.h"
 
 void setup() {
     Serial.begin(9600);
@@ -16,6 +10,10 @@ void setup() {
         ;               // We might need this for some USB boards.  No harm
     }
     Serial.println("Starting up");
+    
+    lcd.init();
+    lcd.clear();
+    lcd.backlight();
 
     // Set up the I/O pins
     pinMode(RLY_10M, OUTPUT);
@@ -23,6 +21,7 @@ void setup() {
     pinMode(RLY_30M, OUTPUT);
     pinMode(RLY_40M, OUTPUT);
     pinMode(RLY_80M, OUTPUT);
+    pinMode(TX_PIN, INPUT);
 }
 
 void loop() {
